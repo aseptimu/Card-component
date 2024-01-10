@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Lexend Deca;
+}
+
+main {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 307px;
+    padding: 48px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.car-icon {
+    margin-bottom: 35px;
+}
+
+.car-type {
+    margin-bottom: 25px;
+    font-family: Big Shoulders Display;
+}
+
+.description {
+    margin-bottom: 83px;
+}
+
+.details {
+    padding: 11px 31.5px 12px;
+    border-radius: 25px;
+}
+
+.details:hover {
+    border: 2px solid #FFF;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
