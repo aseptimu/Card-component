@@ -18,13 +18,22 @@ body {
 main {
     display: flex;
     border-radius: 8px;
-    overflow: hidden;
     flex-wrap: wrap;
 }
 
 .card {
+    margin: auto;
     max-width: 307px;
     padding: 48px;
+}
+.card:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .sedan {
@@ -69,4 +78,17 @@ main {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 307px) and (max-width: 631px) {
+    .card:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card:last-child {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
 }
