@@ -13,6 +13,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: Lexend Deca;
+    color: #f2f2f2;
 }
 
 main {
@@ -55,15 +56,31 @@ main {
 .car-type {
     margin-bottom: 25px;
     font-family: Big Shoulders Display;
+    text-transform: uppercase;
 }
 
 .description {
     margin-bottom: 83px;
+    font-weight: 400;
 }
 
 .details {
     padding: 11px 31.5px 12px;
     border-radius: 25px;
+    background-color: #f2f2f2;
+    border: 2px solid transparent;
+}
+
+.details.sedan {
+    color: #E28625;
+}
+
+.details.suv {
+    color: #006971;
+}
+
+.details.luxury {
+    color: #004140;
 }
 
 .details:hover {
@@ -75,6 +92,7 @@ main {
 
 .attribution {
     font-size: 11px; text-align: center;
+    color: black;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
